@@ -1,4 +1,5 @@
-package com.example.grocerylistmanager;
+
+package edu.qc.seclass.glm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+//import edu.qc.seclass.glm.R;
 
+import com.example.grocerylistmanager.R;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     //Boolean checkUser = DB.checkUsername(user);
                     //Boolean checkpass = DB.checkPassword(user,pass);
                     if (user.equals("admin") && pass.equals("admin")){//we assume that username and password is admin
-                    //if(checkpass == true){
+                    //\\if(checkpass == true){
                         Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent= new Intent(MainActivity.this,GroceryList.class);
+                        Intent intent= new Intent(MainActivity.this, GMLActivity2.class);
                         startActivity(intent);//login success, then we jump to next activity GroceryList
                     }
                     else

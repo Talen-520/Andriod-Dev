@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/img"
-    tools:context=".GroceryList">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/setradius"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
+    <TextView
+        android:id="@+id/groceryListView"
+        android:layout_width="222dp"
+        android:layout_height="96dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_baseline_cloud_done_24"
+        android:drawablePadding="20dp"
+        android:text="Name Of Grocery List"
 
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/roundstyle"
+        />
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/renameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Rename"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </LinearLayout>
+
+</LinearLayout>

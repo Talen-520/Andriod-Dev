@@ -1,4 +1,4 @@
-package com.example.grocerylistmanager;
+package edu.qc.seclass.glm;
 
 import android.content.Context;
 
