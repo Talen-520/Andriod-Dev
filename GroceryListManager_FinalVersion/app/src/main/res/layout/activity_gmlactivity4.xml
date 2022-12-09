@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.qc.seclass.glm.GMLActivity4">
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="Go Back"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/groceryitem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name: Fruit    Item Type: Apple"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem1"
+                android:text="Item Name: Fruit    Item Type: Banana"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem2"
+                android:text="Item Name: Fruit    Item Type: Orange"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem3"
+                android:text="Item Name: Fruit    Item Type: Pear"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem4"
+                android:text="Item Name: Fruit    Item Type: Peach"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem5"
+                android:text="Item Name: Fruit    Item Type: WaterMelon"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem6"
+                android:text="Item Name: Fruit    Item Type: Strawberry"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem7"
+                android:text="Item Name: Fruit    Item Type: Rasberry"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem8"
+                android:text="Item Name: Fruit    Item Type: Blueberry"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem9"
+                android:text="Item Name: Vegatable   Item Type: Lettuce"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem10"
+                android:text="Item Name: Vegatable   Item Type: Spinach"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem11"
+                android:text="Item Name: Vegatable   Item Type: Silver Beet"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem12"
+                android:text="Item Name: Vegatable   Item Type: Garlic"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem13"
+                android:text="Item Name: Vegatable   Item Type: Onion"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem14"
+                android:text="Item Name: Vegatable   Item Type: Potato"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem15"
+                android:text="Item Name: Vegatable   Item Type: Sweet Potato"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem16"
+                android:text="Item Name: Vegatable   Item Type: Celery"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem17"
+                android:text="Item Name: Vegatable   Item Type: Cabbage"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem18"
+                android:text="Item Name: Vegatable   Item Type: Pumpkin"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem19"
+                android:text="Item Name: Vegatable   Item Type: Cucumber"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem20"
+                android:text="Item Name: Vegatable   Item Type: Yarn"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem21"
+                android:text="Item Name: Vegatable   Item Type: Broccoli"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem22"
+                android:text="Item Name: Vegatable   Item Type: Cauliflower"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem23"
+                android:text="Item Name: Vegatable   Item Type: Zucchini"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem24"
+                android:text="Item Name: Vegatable   Item Type: Shallot"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem25"
+                android:text="Item Name: Vegatable   Item Type: Brussels Sprouts"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem26"
+                android:text="Item Name: Drinks   Item Type: Water"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem27"
+                android:text="Item Name: Drinks   Item Type: Coca Cola"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem28"
+                android:text="Item Name: Drinks   Item Type: Pepsi"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem29"
+                android:text="Item Name: Drinks   Item Type: Gatorade"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem30"
+                android:text="Item Name: Drinks   Item Type: Powerade"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem31"
+                android:text="Item Name: Drinks   Item Type: Mountain Dew"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem32"
+                android:text="Item Name: Drinks   Item Type: Sprite"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem33"
+                android:text="Item Name: Drinks   Item Type: Hienz"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem34"
+                android:text="Item Name: Drinks   Item Type: Crown Royal"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem35"
+                android:text="Item Name: Drinks   Item Type: Rum"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem36"
+                android:text="Item Name: Drinks   Item Type: Tequila"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem37"
+                android:text="Item Name: Drinks   Item Type: Vodka"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem38"
+                android:text="Item Name: Drinks   Item Type: Whiskey"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem39"
+                android:text="Item Name: Drinks   Item Type: Coffee"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem40"
+                android:text="Item Name: Drinks   Item Type: Tea"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem41"
+                android:text="Item Name: Desserts   Item Type: Ice Cream"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem42"
+                android:text="Item Name: Desserts   Item Type: Banana Cream Pie"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem43"
+                android:text="Item Name: Desserts   Item Type: Cookies"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem44"
+                android:text="Item Name: Desserts   Item Type: Cake"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem45"
+                android:text="Item Name: Desserts   Item Type: Biscuits"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem46"
+                android:text="Item Name: Desserts   Item Type: Pastry"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem47"
+                android:text="Item Name: Desserts   Item Type: Donut"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem48"
+                android:text="Item Name: Desserts   Item Type: Pudding"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem49"
+                android:text="Item Name: Desserts   Item Type: Brownies"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem50"
+                android:text="Item Name: Desserts   Item Type: Candy"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem51"
+                android:text="Item Name: Food   Item Type: Pizza"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem52"
+                android:text="Item Name: Food   Item Type: Pasta"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem53"
+                android:text="Item Name: Food   Item Type: French Fries"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem54"
+                android:text="Item Name: Food   Item Type: Chicken"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem55"
+                android:text="Item Name: Food   Item Type: Pork"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem56"
+                android:text="Item Name: Food   Item Type: Fish"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/groceryitem58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/groceryitem57"
+                android:text="Item Name: Food   Item Type: Noddles"
+                android:textColor="@color/white"
+                android:textStyle="italic"></TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

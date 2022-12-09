@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.qc.seclass.glm.GMLActivity5">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        >
+        <EditText
+            android:id="@+id/listIDAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter List ID"
+            android:textColorHint="#d0d0e1"
+            android:inputType="numberSigned"
+            />
+        <EditText
+            android:id="@+id/itemIDAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter item ID"
+            android:textColorHint="#d0d0e1"
+            android:inputType="numberSigned"
+            />
+
+        <EditText
+            android:id="@+id/itemNameAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter Item Name"
+            android:textColorHint="#d0d0e1"
+            />
+
+        <EditText
+            android:id="@+id/itemTypeAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter Item Type"
+            android:textColorHint="#d0d0e1"
+            />
+
+
+        <EditText
+            android:id="@+id/itmQAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter Item Quantity"
+            android:textColorHint="#d0d0e1"
+            android:inputType="numberSigned"
+            />
+
+        <EditText
+            android:id="@+id/itmQTypeAct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="Enter Item Quantity Type"
+            android:textColorHint="#d0d0e1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+
+
+
+        <Button
+            android:id="@+id/deleteItemAct5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Delete Item"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+
+        <Button
+            android:id="@+id/addingItemAct5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="Adding Item"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/goBackButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="20dp"
+        android:text="GO BACK"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id ="@+id/noteAct5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goBackButton2"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:text=" Note: To delete a item, you only need to enter the 1st 2 fields"
+        android:textColor="#d0d0e1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id ="@+id/note2Act5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteAct5"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:text=" Note: To add a item, you only need to enter all the fields"
+        android:textColor="#d0d0e1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <EditText
+        android:id="@+id/itemIDDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note2Act5"
+        android:hint="Enter Item ID, if adding item type to DB, disgard"
+        android:textColorHint="#d0d0e1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:inputType="numberSigned"
+        />
+
+    <EditText
+        android:id="@+id/itemNameDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemIDDB"
+        android:hint="Enter Item Name or Item Type"
+        android:textColorHint="#d0d0e1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/addingitemDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemNameDB"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Add item Name to DB"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/addingItemTypeDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addingitemDB"
+        android:text="ADD Item type to DB"
+        android:backgroundTint="@android:color/holo_orange_light"
+        />
+
+
+</RelativeLayout>

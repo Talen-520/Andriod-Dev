@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/holo_orange_light"
+
+    android:orientation="horizontal">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/isCheckedCheckBox"
+        android:layout_width="62dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/groceryListNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="239dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/groceryItemNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:text="Item Name"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/groceryItemQuantityTextView"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/groceryItemUnitTextView"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:baselineAligned="false"
+                android:text="Unit Type"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <Button
+            android:id="@+id/changeItemQuantityAndUnitButton"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:text="Edit"
+            app:backgroundTint="@android:color/holo_red_light"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="16sp"
+            app:backgroundTint="@android:color/holo_red_light" />
+
+    </LinearLayout>
+</LinearLayout>
